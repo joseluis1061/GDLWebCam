@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GDLWebcam</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="site-header">
+    <div class="hero">
+      <div class="contenido-header">
+        <nav class="redes-sociales">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-pinterest-square"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </nav>
+        <div class="informacion-evento">
+          <div class="clearfix">
+            <p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> 09/09/2018</p>
+            <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Popayan, CO.</p>
+          </div>
+
+          <h1 class="nombre-sitio">GDLWebcam</h1>
+          <p class="slogan">La mejor conferencia de <span>sitios web</span></p>
+        </div><!--información-->
+      </div><!--Contenido-header-->
+    </div><!--Hero-->
+  </header>
+
+  <!--Barra de menu principal-->
+  <div class="barra">
+    <div class="contenedor clearfix">
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo">
+      </div><!--logo-->
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!--menu movil-->
+      <nav class="navegacion-principal clearfix">
+        <a href="conferencia.html">Conferencia</a>
+        <a href="#">Calendario</a>
+        <a href="#">Invitado</a>
+        <a href="registro.html">Reservaciones</a>
+      </nav><!--navegacion principal-->
+    </div><!--contenedor-->
+  </div><!--cierre de la barra-->
+
+  <!--===========Descripcion del evento=============-->
+  <section class="seccion contenedor">
+    <h2>La mejor conferencia de diseño Web en español</h2>
+    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+  </section>
+
+  <!--========Agregar seccion con video de fondo====-->
+    <!--Contenedor del video-->
+  <section class="programa">
+
+    <div class="contenedor-video">
+      <!-- Para que el video se reprodusca es necesaria la instruccion
+      muted -->
+      <!-- <video autoplay loop poster="img/bg-talleres.jpg" muted> -->
+      <video autoplay loop poster="img/bg-talleres.jpg">
+        <source src="Videos/video.mp4" type="video/mp4">
+        <source src="Videos/video.webm" type="video/webm">
+        <source src="Videos/video.ogv" type="video/ogv">
+      </video>
+    </div><!--COntenedor video-->
+    
+    <!--Menu de conferencias-->
+    <div class="contenido-programa">
+      <div class="contenedor">
+          <div class="programa-evento">
+            <h2>Programa del evento</h2>
+            <nav class="menu-programa">
+              <a href="#talleres"><i class="fas fa-code"></i>Telleres</a>
+              <a href="#conferencias"><i class="fas fa-comments"></i>Conferencia</a>
+              <a href="#seminarios"><i class="fas fa-university"></i>Seminario</a>
+            </nav>
+            <!--Enlisdtando las conferencias-->
+            <!--Primera conferencia-->
+            <div id="talleres" class="info-curso ocultar clearfix">
+              <div class="detalle-evento">
+                <h3>Html, cs3 y js</h3>
+                <p><i class="far fa-clock"></i>16:00</p>
+                <p><i class="fa fa-calendar"></i>10 de diciembre</p>
+                <p><i class="fas fa-user"></i>Juan Pablo De La Torre Valdes</p>
+              </div>
+              <!--Segunda conferencia-->
+              <div class="detalle-evento">
+                <h3>Responsive Web Design</h3>
+                <p><i class="far fa-clock"></i>20:00</p>
+                <p><i class="fa fa-calendar"></i>10 de diciembre</p>
+                <p><i class="fas fa-user"></i>Juan Pablo De La Torre Valdes</p>
+              </div>
+              <!--Boton-->
+              <a href="#" class="button float-right clearfix">Ver Todos</a>
+            </div><!--FInal seccion talleres-->
+
+            <div id="conferencias" class="info-curso ocultar clearfix">
+              <div class="detalle-evento">
+                <h3>Como ser freelancer</h3>
+                <p><i class="far fa-clock"></i>10:00</p>
+                <p><i class="fa fa-calendar"></i>10 de diciembre</p>
+                <p><i class="fas fa-user"></i>Gregorio Sanchez</p>
+              </div>
+              <!--Segunda conferencia-->
+              <div class="detalle-evento">
+                <h3>Tecnologias del futuro</h3>
+                <p><i class="far fa-clock"></i>17:00</p>
+                <p><i class="fa fa-calendar"></i>10 de diciembre</p>
+                <p><i class="fas fa-user"></i>Susan Perez</p>
+              </div>
+              <!--Boton-->
+              <a href="#" class="button float-right clearfix">Ver Todos</a>
+            </div><!--FInal seccion talleres-->
+
+            <div id="seminarios" class="info-curso ocultar clearfix">
+              <div class="detalle-evento">
+                <h3>Diseño UI/UX para moviles</h3>
+                <p><i class="far fa-clock"></i>16:00</p>
+                <p><i class="fa fa-calendar"></i>10 de diciembre</p>
+                <p><i class="fas fa-user"></i>Jarol Garcia</p>
+              </div>
+              <!--Segunda conferencia-->
+              <div class="detalle-evento">
+                <h3>Aprende a Programar en Una Mañana</h3>
+                <p><i class="far fa-clock"></i>20:00</p>
+                <p><i class="fa fa-calendar"></i>10 de diciembre</p>
+                <p><i class="fas fa-user"></i>Susana Rivera</p>
+              </div>
+              <!--Boton-->
+              <a href="#" class="button float-right clearfix">Ver Todos</a>
+            </div><!--FInal seccion talleres-->
+          </div><!--Programa evento-->
+      </div><!--contenedor-->
+    </div><!--Contenido del programa-->
+
+  </section><!--Fin seeccion programa-->
+
+  <!--========================================================
+  =============================================================-->
+  <!--Seccion de invitados o Ponentes-->
+  <section class="invitados contenedor seccion">
+    <h2>Nuestros invitados</h2>
+    <ul class="lista-invitados clearfix">
+      <!--Invitado 1-->
+      <li>
+        <div class="invitado">
+          <img src="img/invitado1.jpg" alt="Imagen invitado">
+          <p>Rafael Bautista</p>
+        </div>
+      </li>
+      <!--Invitado 2-->
+      <li>
+        <div class="invitado">
+          <img src="img/invitado2.jpg" alt="Imagen invitado">
+          <p>Shari Herrera</p>
+        </div>
+      </li>
+      <!--Invitado 3-->
+      <li>
+        <div class="invitado">
+          <img src="img/invitado3.jpg" alt="Imagen invitado">
+          <p>Gregorio Sanchez</p>
+        </div>
+      </li>
+      <!--Invitado 4-->
+      <li>
+        <div class="invitado">
+          <img src="img/invitado4.jpg" alt="Imagen invitado">
+          <p>Susana Rivera</p>
+        </div>
+      </li>
+      <!--Invitado 5-->
+      <li>
+        <div class="invitado">
+          <img src="img/invitado5.jpg" alt="Imagen invitado">
+          <p>Harold Garcia</p>
+        </div>
+      </li>
+      <!--Invitado 6-->
+      <li>
+        <div class="invitado">
+          <img src="img/invitado6.jpg" alt="Imagen invitado">
+          <p>Susana Sanchez</p>
+        </div>
+      </li>
+    </ul><!--Lista de invitados-->
+  </section><!--Invitados contenedor seccion-->
+
+  <!--Seccion de contador de eventos invitados, talleres...-->
+  <div class="contador parallax">
+    <div class="contenedor">
+      <ul class="resumen-evento clearfix">
+          <li><p class="numero"></p>Invitados</li>
+          <li><p class="numero"></p>Talleres</li>
+          <li><p class="numero"></p>Dias</li>
+          <li><p class="numero"></p>Conferencias</li>
+      </ul>
+    </div><!--contenedor-->
+  </div><!--contador-->
+  <!--================================
+  =======================================-->
+  <!--Seccion de lista de precios-->
+  <section class="precio seccion">
+    <h2>Precios</h2>
+    <div class="contenedor">
+      <ul class="lista-precios clearfix">
+        <!--Primera tabla-->
+        <li>
+          <div class="tabla-precios">
+            <h3>Pase por día</h3>
+            <p class="numero">$30</p>
+            <ul>
+              <li>Bocadillos gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+            <a href="#" class="button hollow">Comprar</a>
+          </div>
+        </li>
+        <!--Segunda tabla-->
+        <li>
+          <div class="tabla-precios">
+            <h3>Todos los dias</h3>
+            <p class="numero">$50</p>
+            <ul>
+              <li>Bocadillos gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+            <a href="#" class="button">Comprar</a>
+          </div>
+        </li>
+        <!--Tercer tabla-->
+        <li>
+          <div class="tabla-precios">
+            <h3>Pase por dos día</h3>
+            <p class="numero">$45</p>
+            <ul>
+              <li>Bocadillos gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+            <a href="#" class="button hollow">Comprar</a>
+          </div>
+        </li>
+
+      </ul>
+    </div><!--contenedor-->
+  </section><!--Fin de la seccion-->
+
+  <!--=====================MAPA====================-->
+  <div id="mapa" class="mapa">
+
+  </div>
+
+  <!--=====================TESTIMONIALES====================-->
+  <section class="seccion">
+    <h2>Testimonial</h2>
+    <div class="testimoniales contenedor clearfix">
+          <!--Testimonial 1-->
+          <div class="testimonial">
+          <blockquote cite="http://">
+            <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+            <footer class="info-testimonial clearfix">
+              <img src="img/testimonial.jpg" alt="Testimonial">
+              <cite>Oswaldo Aponte Escobedo <span>Diseñador de @prisma</span></cite>
+            </footer>
+          </blockquote>
+        </div><!--Fin testimonial 1-->
+
+        <!--Testimonial 2-->
+        <div class="testimonial">
+        <blockquote cite="http://">
+          <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+          <footer class="info-testimonial clearfix">
+            <img src="img/testimonial.jpg" alt="Testimonial">
+            <cite>Oswaldo Aponte Escobedo <span>Diseñador de @prisma</span></cite>
+          </footer>
+        </blockquote>
+      </div><!--Fin testimonial 2-->
+
+      <!--Testimonial 3-->
+      <div class="testimonial">
+      <blockquote cite="http://">
+        <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+        <footer class="info-testimonial clearfix">
+          <img src="img/testimonial.jpg" alt="Testimonial">
+          <cite>Oswaldo Aponte Escobedo <span>Diseñador de @prisma</span></cite>
+        </footer>
+      </blockquote>
+    </div><!--Fin testimonial 3-->
+    </div><!--Fin testimonialescccc-->
+  </section>
+
+  <!-- ========================================================
+  =========================================================== -->
+  <!--Newsletter y cuenta regresiva-->
+  <div class="newsletter parallax">
+    <div class="contenido contenedor">
+      <p>Registrate en Newsletter</p>
+      <h3>GdlWebcam</h3>
+      <a href="#" class="button transparente">Registro</a>
+    </div><!--Contenido y contenedor-->
+  </div><!--Newsletter-->
+  <!-- ========================================================
+  =========================================================== -->
+  <!--Cuenta regresiva-->
+  <section class="seccion">
+    <h2>Faltan</h2>
+    <div class="cuenta-regresiva">
+      <ul class="contenedor clearfix">
+        <li><p id="dias" class="numero"></p>dias</li>
+        <li><p id="horas" class="numero"></p>hora</li>
+        <li><p id="minutos" class="numero"></p>minuto</li>
+        <li><p id="segundos" class="numero"></p>segundo</li>
+      </ul><!--Contenedor-->
+    </div><!--Cuenta regresiva-->
+  </section><!--Seccion-->
+  <!-- ========================================================
+  =========================================================== -->
+  <!--Footer del sitio-->
+  <footer class="site-footer">
+    <div class="contenedor clearfix">
+      <!--footer 1-->
+      <div class="footer-informacion">
+        <h3>Sobre <span>GDLWebcam</span></h3>
+        <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto.</p>
+
+      </div>
+      <!--footer 2-->
+      <div class="ultimos-tweets">
+        <h3>Ultimos <span>tweets</span></h3>
+        <ul>
+          <li>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. T</li>
+
+          <li>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. T</li>
+
+          <li>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. T</li>
+        </ul>
+      </div>
+      <!--footer 3-->
+      <div class="menu clearfix">
+        <h3>Redes <span>sociales</span></h3>
+        <nav class="redes-sociales">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-pinterest-square"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </nav>
+      </div>
+      <!--Fin-->
+    </div>
+    <!--Copyrigth-->
+    <p class="copyright">Todos los dereschos reservados &copy</p>
+  </footer>
+  <!-- ========================================================
+  =========================================================== -->
+  
+  
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/main.js"></script>
+  
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
